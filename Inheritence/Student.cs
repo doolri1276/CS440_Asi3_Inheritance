@@ -30,5 +30,38 @@ namespace Inheritence
         }
 
         public abstract string ComputeGrade();
+
+        protected string gradeToLetter(double avg)
+        {
+            string grade = "";
+            if (avg >= 93)
+                grade = "A";
+            else if (avg >= 90)
+                grade = "A-";
+            else if (avg >= 87)
+                grade = "B+";
+            else if (avg >= 83)
+                grade = "B";
+            else if (avg >= 80)
+                grade = "B-";
+            else if (avg >= 77)
+                grade = "C+";
+            else if (avg >= 73)
+                grade = "C";
+            else if (avg >= 70)
+                grade = "C-";
+            else if (avg >= 67)
+                grade = "D+";
+            else if (avg >= 63)
+                grade = "D";
+            else if (avg >= 60)
+                grade = "D-";
+            else
+                grade = "F";
+
+            return grade;
+
+
+        }
     }
 }

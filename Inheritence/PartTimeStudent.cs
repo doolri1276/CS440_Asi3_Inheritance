@@ -25,7 +25,7 @@ namespace Inheritence
 
         public override string ComputeGrade()
         {
-            return (0.3 * Test1 + 0.7 * Test2).ToString();
+            return gradeToLetter(0.3 * Test1 + 0.7 * Test2);
         }
 
         public override string ToString()
