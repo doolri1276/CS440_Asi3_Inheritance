@@ -6,14 +6,14 @@ namespace Inheritence
 {
     class FullTimeFaculty : Employee
     {
-        public enum Level
+        public enum Rank
         {
-            Assistant, Associate, FullProfessor
+           ASSISTANT , ASSOCIATE, FULLPROFESSOR
         }
 
-        Level rank;
+        Rank facultyRank;
 
-        private Level Rank { get => rank; set => rank = value; }
+        private Rank FacultyRank { get => facultyRank; set => facultyRank = value; }
 
         public FullTimeFaculty(string firstName,
                           string lastName,
@@ -22,14 +22,14 @@ namespace Inheritence
                           string telephone,
                           string department,
                           string empID,
-                          Level rank) : base(firstName, lastName, streetAddress, city, telephone, department, empID)
+                          Rank rank) : base(firstName, lastName, streetAddress, city, telephone, department, empID)
         {
-            this.Rank = rank;
+            this.FacultyRank = rank;
         }
 
         public override string ToString()
         {
-            return base.ToString() + " rank : " + rank;
+            return base.ToString() + " rank : " + facultyRank;
         }
     }
 }
