@@ -29,7 +29,7 @@ namespace Inheritence
 
         public override string ToString()
         {
-            return base.ToString() + " rank : " + facultyRank;
+            return base.ToString() + " rank : " + facultyRank.ToString();
         }
     }
 }
